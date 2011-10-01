@@ -6,6 +6,9 @@
     <!--[if lte IE 8]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
     <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">
     <link rel="stylesheet" href="css/generic.css" />
   </head>
@@ -122,25 +125,33 @@
             <li>hoge</li>
           </ul>
           </nav>
-          <section id="footer-contact" class="footer-col">
-          <h3>Contact Us</h3>
-          <address>Kita Ward, Sapporo City, Hokkaido, Japan</address>
-          </section>
+          <div id="footer-right" class="footer-col">
+            <section id="footer-search" class="footer-col">
+            <h3>Search</h3>
+            <form class="stacked" action="" method="POST">
+              <input type="text">
+              <input type="submit" value="Go" />
+            </form>
+            </section>
+            <section id="footer-contact" class="footer-col">
+            <h3>Contact Us</h3>
+            <address>Kita Ward, Sapporo City, Hokkaido, Japan</address>
+            </section>
+          </div>
         </div>
         <section id="sponsors">
-              <ul>
-                <li>
-                <a href=""><img src="img/sponsor0.png" alt="Hokkaido" width="136" height="46" /></a>
-                <li>
-                <a href=""><img src="img/sponsor1.png" alt="Cosmo" width="244" height="46" /></a>
-                <li>
-                <a href=""><img src="img/sponsor2.png" alt="Primary" width="136" height="46" /></a>
-                </li>
-                <li>
-                <a href=""><img src="img/sponsor3.png" alt="Mendel-Factory" width="136" height="46" /></a>
-                </li>
-              </ul>
-            </section>
-      </div>
+          <ul>
+            <li>
+            <a href=""><img src="img/sponsor0.png" alt="Hokkaido" width="136" height="46" /></a>
+            <li>
+            <a href=""><img src="img/sponsor1.png" alt="Cosmo" width="244" height="46" /></a>
+            <li>
+            <a href=""><img src="img/sponsor2.png" alt="Primary" width="136" height="46" /></a>
+            </li>
+            <li>
+            <a href=""><img src="img/sponsor3.png" alt="Mendel-Factory" width="136" height="46" /></a>
+            </li>
+          </ul>
+          </section>
   </body>
 </html>
