@@ -1,4 +1,6 @@
 $(function(){
     // クソヘッダ消去
-    $("p-logo").remove();
+    $("div#top-section").remove();
+    $("div#catlinks").remove();
+    $("div#footer-box").remove();
 });
