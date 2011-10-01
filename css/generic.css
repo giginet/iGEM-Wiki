@@ -26,14 +26,14 @@ h2 {
   color: #333333;
   border-left:7px solid rgb(201,222,150);
   border-bottom:1px solid #ccc;
-  margin: 10px 3px;
+  margin: 25px 3px 10px;
   padding:6px 8px;
 }
 
-h3 {
+article h3 {
   color: #333333;
   border-bottom:1px solid #ccc;
-  margin: 5px 3px 10px;
+  margin: 20px 3px 10px;
 }
 
 header {
@@ -72,7 +72,7 @@ header nav#header-menu ul {
   margin: 0px;
   padding: 0px;
   height: 30px;
-  right: 0;
+  right: 5px;
   bottom: 0;
   position: absolute;
   vertical-align: bottom;
@@ -93,20 +93,10 @@ header nav#header-menu ul li {
   cursor: pointer;
 }
 
-nav#header-menu ul li.selected {
-}
-
-nav#header-menu ul li:hover {
-  color: #fefefe;
-  text-shadow: 1px 1px 0.5px black;
+nav#header-menu ul li:hover, nav#header-menu ul li.selected {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px gray;
   background: rgb(201,222,150);
-  background: -moz-linear-gradient(top, rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(201,222,150,1)), color-stop(44%,rgba(138,182,107,1)), color-stop(100%,rgba(57,130,53,1)));
-  background: -webkit-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
-  background: -o-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
-  background: -ms-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=0 );
-  background: linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); 
 }
 
 section#main {
@@ -117,25 +107,20 @@ section#main {
 }
 
 article#content {
-  padding: 20px 5px 50px 5px;
+  padding: 0px 5px 50px 5px;
 }
 
 footer {
   background-color: #efefef;
   border-top: 2px solid #dedede;
   width: 100%;
-  height: 320px;
+  height: 280px;
   bottom: 0px; 
 }
 
 footer h3 {
   color: #666666;
   text-shadow: 2px 2px 5px #fefefe;
-  margin-bottom: 3px;
-}
-
-footer h3+* {
-  margin-left: 15px;
 }
 
 footer ul {
@@ -149,7 +134,7 @@ footer div#footer {
 }
 
 footer div.wrapper {
-  height: 240px;
+  height: 200px;
   position: relative;
   bottom: 0;
 }
@@ -170,11 +155,15 @@ section#sponsors ul li {
 }
 
 .footer-col ul {
-  padding-left: 0px;
+  padding-left: 7px;
 }
 
 .footer-col address {
-  margin-left: 5px;
+  margin-left: 7px;
+}
+
+nav#footer-menu li.selected {
+  color: #42426F;
 }
 
 nav#footer-about {
