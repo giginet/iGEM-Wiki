@@ -5,6 +5,37 @@ html, body {
   position: relative;
 }
 
+h1 {
+  color: #fefefe;
+  text-shadow: 1px 1px 0.5px black;
+  background: rgb(201,222,150);
+  background: -moz-linear-gradient(top, rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(201,222,150,1)), color-stop(44%,rgba(138,182,107,1)), color-stop(100%,rgba(57,130,53,1)));
+  background: -webkit-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+  background: -o-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+  background: -ms-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=0 );
+  background: linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+  border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px; 5px 0px 0px;
+  -webkit-border-radius: 5px; 5px 0px 0px;
+  padding: 3px 8px;
+}
+
+h2 {
+  color: #333333;
+  border-left:7px solid rgb(201,222,150);
+  border-bottom:1px solid #ccc;
+  margin: 10px 3px;
+  padding:6px 8px;
+}
+
+h3 {
+  color: #333333;
+  border-bottom:1px solid #ccc;
+  margin: 5px 3px 10px;
+}
+
 header {
   position: relative;
   border-bottom: solid 1px #dedede;
@@ -38,12 +69,13 @@ header nav#header-menu {
 }
 
 header nav#header-menu ul {
-  margin: 2px auto;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   height: 30px;
-  right: 5px;
+  right: 0;
   bottom: 0;
   position: absolute;
+  vertical-align: bottom;
   list-style: none;
 }
 
@@ -55,8 +87,26 @@ header nav#header-menu ul li {
   border-radius: 5px 5px 0px 0px;
   -moz-border-radius: 5px; 5px 0px 0px;
   -webkit-border-radius: 5px; 5px 0px 0px;
-  height: 25px;
-  display: inline-block;
+  height: 24px;
+  bottom: 0;
+  float: left;
+  cursor: pointer;
+}
+
+nav#header-menu ul li.selected {
+}
+
+nav#header-menu ul li:hover {
+  color: #fefefe;
+  text-shadow: 1px 1px 0.5px black;
+  background: rgb(201,222,150);
+  background: -moz-linear-gradient(top, rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(201,222,150,1)), color-stop(44%,rgba(138,182,107,1)), color-stop(100%,rgba(57,130,53,1)));
+  background: -webkit-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+  background: -o-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+  background: -ms-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=0 );
+  background: linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); 
 }
 
 section#main {
@@ -78,7 +128,18 @@ footer {
   bottom: 0px; 
 }
 
+footer h3 {
+  color: #666666;
+  text-shadow: 2px 2px 5px #fefefe;
+  margin-bottom: 3px;
+}
+
+footer h3+* {
+  margin-left: 15px;
+}
+
 footer ul {
+  margin-top: 0;
   list-style: none;
 }
 
@@ -108,6 +169,14 @@ section#sponsors ul li {
   width: 320px;
 }
 
+.footer-col ul {
+  padding-left: 0px;
+}
+
+.footer-col address {
+  margin-left: 5px;
+}
+
 nav#footer-about {
   float: left;
 }
@@ -118,4 +187,8 @@ nav#footer-menu {
 
 section#footer-contact {
   float: left;
+}
+
+section#footer-contact address {
+  color: gray;
 }
