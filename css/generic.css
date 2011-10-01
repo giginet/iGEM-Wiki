@@ -20,15 +20,15 @@ header > div.header {
 }
 
 header div#logo {
+  border: 1px solid #dedede;
   margin: 0 auto;
-  background-color: red;
   width: 280px;
   height: 100px;
   position: absolute;
   float: left;
 }
 
-header nav#menu {
+header nav#header-menu {
   margin: 0;
   padding: 0;
   width: 700px;
@@ -37,21 +37,25 @@ header nav#menu {
   position: absolute;
 }
 
-header nav#menu ul {
-  margin: 0 0 5px 20px;
+header nav#header-menu ul {
+  margin: 2px auto;
   padding: 0;
-  height: 25px;
+  height: 30px;
+  right: 5px;
   bottom: 0;
   position: absolute;
   list-style: none;
 }
 
-header nav#menu ul li {
-  margin: 0 2px;
-  padding: 2px 5px;
+header nav#header-menu ul li {
+  margin: 0 1px;
+  padding: 4px 5px 2px;
   border: solid 2px #dedede;
   border-bottom-style: none;
-  height: 100%;
+  border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px; 5px 0px 0px;
+  -webkit-border-radius: 5px; 5px 0px 0px;
+  height: 25px;
   display: inline-block;
 }
 
@@ -63,7 +67,7 @@ section#main {
 }
 
 article#content {
-  padding: 20px 20px 50px 20px;
+  padding: 20px 5px 50px 5px;
 }
 
 footer {
@@ -72,5 +76,21 @@ footer {
   width: 100%;
   height: 300px;
   bottom: 0px; 
+}
+
+footer div#footer {
+  margin: 0 auto;
+  width: 980px;
   position: relative;
+}
+
+section#sponsors ul {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+section#sponsors ul li {
+  display: inline-block;
+  list-style: none;
 }
